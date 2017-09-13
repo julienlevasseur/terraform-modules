@@ -1,5 +1,22 @@
-variable "username" {}
-variable "tenant_name" {}
-variable "password" {}
+#variable "username" {}
+#variable "tenant_name" {}
+#variable "password" {}
+#variable "auth_url" {}
+#variable "region" {}
+
 variable "auth_url" {}
 variable "region" {}
+variable "user_name" {}
+variable "user_id" {}
+variable "tenant_id" {}
+variable "tenant_name" {}
+variable "password" {}
+variable "token" {}
+variable "domain_id" {}
+variable "domain_name" {}
+variable "insecure" {}
+variable "cacert_file" {}
+variable "cert" {}
+variable "key" {}
+variable "endpoint_type" {}
+variable "swauth" {}

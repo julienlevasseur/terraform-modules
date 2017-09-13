@@ -1,3 +1,5 @@
+# Doc : https://www.terraform.io/docs/providers/openstack/index.html
+
 # export TF_VAR_username=""
 # export TF_VAR_tenant_name=""
 # export TF_VAR_password=""
@@ -7,9 +9,25 @@
 # export OS_USER_DOMAIN_NAME=""
 
 provider "openstack" {
-  user_name   = "${var.username}"
-  tenant_name = "${var.tenant_name}"
-  password    = "${var.password}"
-  auth_url    = "${var.auth_url}"
-  region      = "${var.region}"
+  #user_name   = "${var.username}"
+  #tenant_name = "${var.tenant_name}"
+  #password    = "${var.password}"
+  #auth_url    = "${var.auth_url}"
+  #region      = "${var.region}"
+  auth_url      = "${var.auth_url}"
+  region        = "${var.region}"
+  user_name     = "${var.user_name}"
+  user_id       = "${var.user_id}"
+  tenant_id     = "${var.tenant_id}"
+  tenant_name   = "${var.tenant_name}"
+  password      = "${var.password}"
+  token         = "${var.token}"
+  domain_id     = "${var.domain_id}"
+  domain_name   = "${var.domain_name}"
+  insecure      = "${var.insecure}"
+  cacert_file   = "${var.cacert_file}"
+  cert          = "${var.cert}"
+  key           = "${var.key}"
+  endpoint_type = "${var.endpoint_type}"
+  swauth        = "${var.swauth}"
 }
