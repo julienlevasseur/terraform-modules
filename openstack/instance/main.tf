@@ -9,6 +9,10 @@ resource "openstack_compute_instance_v2" "instance" {
   }
 }
 
+output "name" {
+  value = "${openstack_compute_instance_v2.instance.name}"
+}
+
 # Note :
 #   security_groups is embeded in brackets to avoid this error :
 #     * module.openstack_instance.openstack_compute_instance_v2.instance:
