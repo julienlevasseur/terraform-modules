@@ -13,6 +13,10 @@ output "name" {
   value = "${openstack_compute_instance_v2.instance.name}"
 }
 
+output "ip" {
+  value = "${openstack_compute_instance_v2.instance.access_ip_v4}"
+}
+
 # Note :
 #   security_groups is embeded in brackets to avoid this error :
 #     * module.openstack_instance.openstack_compute_instance_v2.instance:
