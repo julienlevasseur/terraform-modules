@@ -41,7 +41,7 @@ output "snapshot_id" {
   value = "${openstack_blockstorage_volume_v2.volume.snapshot_id}"
 }
 
-output "imetadata {
+output "metadata" {
   value = "${openstack_blockstorage_volume_v2.volume.metadata}"
 }
 
