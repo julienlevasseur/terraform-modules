@@ -4,13 +4,13 @@ resource "openstack_blockstorage_volume_attach_v2" "volume_attach" {
 }
 
 output "data" {
-  value = "${openstack_blockstorage_volume_attach_v2.volume.data}"
+  value = "${openstack_blockstorage_volume_attach_v2.volume_attach.data}"
 }
 
 output "driver_volume_type" {
-  value = "${openstack_blockstorage_volume_attach_v2.volume.driver_volume_type}"
+  value = "${openstack_blockstorage_volume_attach_v2.volume_attach.driver_volume_type}"
 }
 
 output "mount_point_base" {
-  value = "${openstack_blockstorage_volume_attach_v2.volume.mount_point_base}"
+  value = "${openstack_blockstorage_volume_attach_v2.volume_attach.mount_point_base}"
 }
